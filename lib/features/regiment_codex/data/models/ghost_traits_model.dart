@@ -5,12 +5,13 @@ part 'ghost_traits_model.freezed.dart';
 part 'ghost_traits_model.g.dart';
 
 @Freezed()
-class GhostTraitsModel with _$GhostTraitsModel {
-  factory GhostTraitsModel({
-    final String? name,
-    final int? value,
-  }) = _GhostTraitsModel;
+class GhostAttributesModel with _$GhostAttributesModel {
+  factory GhostAttributesModel({
+    final String? id,
+    @JsonKey(name: 'trait_type') final String? traitType,
+    final String? value,
+  }) = _GhostAttributesModel;
 
-  factory GhostTraitsModel.fromJson(Map<String, dynamic> json) =>
-      _$GhostTraitsModelFromJson(json);
+  factory GhostAttributesModel.fromJson(Map<String, dynamic> json) =>
+      _$GhostAttributesModelFromJson(json);
 }

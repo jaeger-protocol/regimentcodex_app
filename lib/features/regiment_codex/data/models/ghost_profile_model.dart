@@ -8,13 +8,12 @@ part 'ghost_profile_model.g.dart';
 class GhostProfileModel with _$GhostProfileModel {
   factory GhostProfileModel({
     final int? id,
-    final String? image,
     final String? name,
-    final int? number,
-    final num? count,
+    final String? image,
     final String? openseaLink,
     final String? holderLink,
-    final List<GhostTraitsModel>? traits,
+    final String? description,
+    final List<GhostAttributesModel>? attributes,
   }) = _GhostProfileModel;
 
   factory GhostProfileModel.fromJson(Map<String, dynamic> json) =>

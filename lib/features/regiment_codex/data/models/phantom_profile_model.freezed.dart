@@ -20,8 +20,20 @@ PhantomProfileModel _$PhantomProfileModelFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$PhantomProfileModel {
+  int? get id => throw _privateConstructorUsedError;
+  @JsonKey(name: 'phantom_di')
+  String? get phantomId => throw _privateConstructorUsedError;
   String? get name => throw _privateConstructorUsedError;
-  String? get about => throw _privateConstructorUsedError;
+  String? get image => throw _privateConstructorUsedError;
+  @JsonKey(name: 'phantom_story')
+  String? get phantomStory => throw _privateConstructorUsedError;
+  @JsonKey(name: 'regiment_info')
+  String? get regimentInfo => throw _privateConstructorUsedError;
+  @JsonKey(name: 'personal_page')
+  String? get personalPage => throw _privateConstructorUsedError;
+  String? get twitter => throw _privateConstructorUsedError;
+  @JsonKey(name: 'personal_wallet')
+  String? get personalWallet => throw _privateConstructorUsedError;
   String? get sigil => throw _privateConstructorUsedError;
   int? get number => throw _privateConstructorUsedError;
   List<GhostProfileModel>? get ghosts => throw _privateConstructorUsedError;
@@ -38,8 +50,15 @@ abstract class $PhantomProfileModelCopyWith<$Res> {
           PhantomProfileModel value, $Res Function(PhantomProfileModel) then) =
       _$PhantomProfileModelCopyWithImpl<$Res>;
   $Res call(
-      {String? name,
-      String? about,
+      {int? id,
+      @JsonKey(name: 'phantom_di') String? phantomId,
+      String? name,
+      String? image,
+      @JsonKey(name: 'phantom_story') String? phantomStory,
+      @JsonKey(name: 'regiment_info') String? regimentInfo,
+      @JsonKey(name: 'personal_page') String? personalPage,
+      String? twitter,
+      @JsonKey(name: 'personal_wallet') String? personalWallet,
       String? sigil,
       int? number,
       List<GhostProfileModel>? ghosts});
@@ -56,20 +75,55 @@ class _$PhantomProfileModelCopyWithImpl<$Res>
 
   @override
   $Res call({
+    Object? id = freezed,
+    Object? phantomId = freezed,
     Object? name = freezed,
-    Object? about = freezed,
+    Object? image = freezed,
+    Object? phantomStory = freezed,
+    Object? regimentInfo = freezed,
+    Object? personalPage = freezed,
+    Object? twitter = freezed,
+    Object? personalWallet = freezed,
     Object? sigil = freezed,
     Object? number = freezed,
     Object? ghosts = freezed,
   }) {
     return _then(_value.copyWith(
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      phantomId: phantomId == freezed
+          ? _value.phantomId
+          : phantomId // ignore: cast_nullable_to_non_nullable
+              as String?,
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String?,
-      about: about == freezed
-          ? _value.about
-          : about // ignore: cast_nullable_to_non_nullable
+      image: image == freezed
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phantomStory: phantomStory == freezed
+          ? _value.phantomStory
+          : phantomStory // ignore: cast_nullable_to_non_nullable
+              as String?,
+      regimentInfo: regimentInfo == freezed
+          ? _value.regimentInfo
+          : regimentInfo // ignore: cast_nullable_to_non_nullable
+              as String?,
+      personalPage: personalPage == freezed
+          ? _value.personalPage
+          : personalPage // ignore: cast_nullable_to_non_nullable
+              as String?,
+      twitter: twitter == freezed
+          ? _value.twitter
+          : twitter // ignore: cast_nullable_to_non_nullable
+              as String?,
+      personalWallet: personalWallet == freezed
+          ? _value.personalWallet
+          : personalWallet // ignore: cast_nullable_to_non_nullable
               as String?,
       sigil: sigil == freezed
           ? _value.sigil
@@ -95,8 +149,15 @@ abstract class _$$_PhantomProfileModelCopyWith<$Res>
       __$$_PhantomProfileModelCopyWithImpl<$Res>;
   @override
   $Res call(
-      {String? name,
-      String? about,
+      {int? id,
+      @JsonKey(name: 'phantom_di') String? phantomId,
+      String? name,
+      String? image,
+      @JsonKey(name: 'phantom_story') String? phantomStory,
+      @JsonKey(name: 'regiment_info') String? regimentInfo,
+      @JsonKey(name: 'personal_page') String? personalPage,
+      String? twitter,
+      @JsonKey(name: 'personal_wallet') String? personalWallet,
       String? sigil,
       int? number,
       List<GhostProfileModel>? ghosts});
@@ -115,20 +176,55 @@ class __$$_PhantomProfileModelCopyWithImpl<$Res>
 
   @override
   $Res call({
+    Object? id = freezed,
+    Object? phantomId = freezed,
     Object? name = freezed,
-    Object? about = freezed,
+    Object? image = freezed,
+    Object? phantomStory = freezed,
+    Object? regimentInfo = freezed,
+    Object? personalPage = freezed,
+    Object? twitter = freezed,
+    Object? personalWallet = freezed,
     Object? sigil = freezed,
     Object? number = freezed,
     Object? ghosts = freezed,
   }) {
     return _then(_$_PhantomProfileModel(
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      phantomId: phantomId == freezed
+          ? _value.phantomId
+          : phantomId // ignore: cast_nullable_to_non_nullable
+              as String?,
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String?,
-      about: about == freezed
-          ? _value.about
-          : about // ignore: cast_nullable_to_non_nullable
+      image: image == freezed
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phantomStory: phantomStory == freezed
+          ? _value.phantomStory
+          : phantomStory // ignore: cast_nullable_to_non_nullable
+              as String?,
+      regimentInfo: regimentInfo == freezed
+          ? _value.regimentInfo
+          : regimentInfo // ignore: cast_nullable_to_non_nullable
+              as String?,
+      personalPage: personalPage == freezed
+          ? _value.personalPage
+          : personalPage // ignore: cast_nullable_to_non_nullable
+              as String?,
+      twitter: twitter == freezed
+          ? _value.twitter
+          : twitter // ignore: cast_nullable_to_non_nullable
+              as String?,
+      personalWallet: personalWallet == freezed
+          ? _value.personalWallet
+          : personalWallet // ignore: cast_nullable_to_non_nullable
               as String?,
       sigil: sigil == freezed
           ? _value.sigil
@@ -150,8 +246,15 @@ class __$$_PhantomProfileModelCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_PhantomProfileModel implements _PhantomProfileModel {
   _$_PhantomProfileModel(
-      {this.name,
-      this.about,
+      {this.id,
+      @JsonKey(name: 'phantom_di') this.phantomId,
+      this.name,
+      this.image,
+      @JsonKey(name: 'phantom_story') this.phantomStory,
+      @JsonKey(name: 'regiment_info') this.regimentInfo,
+      @JsonKey(name: 'personal_page') this.personalPage,
+      this.twitter,
+      @JsonKey(name: 'personal_wallet') this.personalWallet,
       this.sigil,
       this.number,
       final List<GhostProfileModel>? ghosts})
@@ -161,9 +264,28 @@ class _$_PhantomProfileModel implements _PhantomProfileModel {
       _$$_PhantomProfileModelFromJson(json);
 
   @override
+  final int? id;
+  @override
+  @JsonKey(name: 'phantom_di')
+  final String? phantomId;
+  @override
   final String? name;
   @override
-  final String? about;
+  final String? image;
+  @override
+  @JsonKey(name: 'phantom_story')
+  final String? phantomStory;
+  @override
+  @JsonKey(name: 'regiment_info')
+  final String? regimentInfo;
+  @override
+  @JsonKey(name: 'personal_page')
+  final String? personalPage;
+  @override
+  final String? twitter;
+  @override
+  @JsonKey(name: 'personal_wallet')
+  final String? personalWallet;
   @override
   final String? sigil;
   @override
@@ -179,7 +301,7 @@ class _$_PhantomProfileModel implements _PhantomProfileModel {
 
   @override
   String toString() {
-    return 'PhantomProfileModel(name: $name, about: $about, sigil: $sigil, number: $number, ghosts: $ghosts)';
+    return 'PhantomProfileModel(id: $id, phantomId: $phantomId, name: $name, image: $image, phantomStory: $phantomStory, regimentInfo: $regimentInfo, personalPage: $personalPage, twitter: $twitter, personalWallet: $personalWallet, sigil: $sigil, number: $number, ghosts: $ghosts)';
   }
 
   @override
@@ -187,8 +309,19 @@ class _$_PhantomProfileModel implements _PhantomProfileModel {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PhantomProfileModel &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.phantomId, phantomId) &&
             const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.about, about) &&
+            const DeepCollectionEquality().equals(other.image, image) &&
+            const DeepCollectionEquality()
+                .equals(other.phantomStory, phantomStory) &&
+            const DeepCollectionEquality()
+                .equals(other.regimentInfo, regimentInfo) &&
+            const DeepCollectionEquality()
+                .equals(other.personalPage, personalPage) &&
+            const DeepCollectionEquality().equals(other.twitter, twitter) &&
+            const DeepCollectionEquality()
+                .equals(other.personalWallet, personalWallet) &&
             const DeepCollectionEquality().equals(other.sigil, sigil) &&
             const DeepCollectionEquality().equals(other.number, number) &&
             const DeepCollectionEquality().equals(other._ghosts, _ghosts));
@@ -198,8 +331,15 @@ class _$_PhantomProfileModel implements _PhantomProfileModel {
   @override
   int get hashCode => Object.hash(
       runtimeType,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(phantomId),
       const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(about),
+      const DeepCollectionEquality().hash(image),
+      const DeepCollectionEquality().hash(phantomStory),
+      const DeepCollectionEquality().hash(regimentInfo),
+      const DeepCollectionEquality().hash(personalPage),
+      const DeepCollectionEquality().hash(twitter),
+      const DeepCollectionEquality().hash(personalWallet),
       const DeepCollectionEquality().hash(sigil),
       const DeepCollectionEquality().hash(number),
       const DeepCollectionEquality().hash(_ghosts));
@@ -218,8 +358,15 @@ class _$_PhantomProfileModel implements _PhantomProfileModel {
 
 abstract class _PhantomProfileModel implements PhantomProfileModel {
   factory _PhantomProfileModel(
-      {final String? name,
-      final String? about,
+      {final int? id,
+      @JsonKey(name: 'phantom_di') final String? phantomId,
+      final String? name,
+      final String? image,
+      @JsonKey(name: 'phantom_story') final String? phantomStory,
+      @JsonKey(name: 'regiment_info') final String? regimentInfo,
+      @JsonKey(name: 'personal_page') final String? personalPage,
+      final String? twitter,
+      @JsonKey(name: 'personal_wallet') final String? personalWallet,
       final String? sigil,
       final int? number,
       final List<GhostProfileModel>? ghosts}) = _$_PhantomProfileModel;
@@ -228,9 +375,28 @@ abstract class _PhantomProfileModel implements PhantomProfileModel {
       _$_PhantomProfileModel.fromJson;
 
   @override
+  int? get id => throw _privateConstructorUsedError;
+  @override
+  @JsonKey(name: 'phantom_di')
+  String? get phantomId => throw _privateConstructorUsedError;
+  @override
   String? get name => throw _privateConstructorUsedError;
   @override
-  String? get about => throw _privateConstructorUsedError;
+  String? get image => throw _privateConstructorUsedError;
+  @override
+  @JsonKey(name: 'phantom_story')
+  String? get phantomStory => throw _privateConstructorUsedError;
+  @override
+  @JsonKey(name: 'regiment_info')
+  String? get regimentInfo => throw _privateConstructorUsedError;
+  @override
+  @JsonKey(name: 'personal_page')
+  String? get personalPage => throw _privateConstructorUsedError;
+  @override
+  String? get twitter => throw _privateConstructorUsedError;
+  @override
+  @JsonKey(name: 'personal_wallet')
+  String? get personalWallet => throw _privateConstructorUsedError;
   @override
   String? get sigil => throw _privateConstructorUsedError;
   @override
