@@ -3,13 +3,13 @@ part of regiment_codex;
 class RegimentCodexRepositoryImpl implements RegimentCodexRepository {
   const RegimentCodexRepositoryImpl(
     this._netWorkInfoImpl,
-    this._remoteDataSourceImpl,
     this._localDataSourceImpl,
+    this._remoteDataSourceImpl,
   );
 
-  final NetWorkInfoImpl _netWorkInfoImpl;
-  final CodexRemoteDataSourceImpl _remoteDataSourceImpl;
+  final NetworkInfoImpl _netWorkInfoImpl;
   final CodexLocalDataSourceImpl _localDataSourceImpl;
+  final CodexRemoteDataSourceImpl _remoteDataSourceImpl;
 
   @override
   Future<Either<CodexException, List<PhantomProfileModel>>> phantoms() async {

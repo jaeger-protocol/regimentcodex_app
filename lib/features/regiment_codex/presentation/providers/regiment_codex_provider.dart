@@ -16,10 +16,11 @@ class RegimentCodexProvider with ChangeNotifier {
   final GetPhantoms _getPhantoms;
   final GetGhosts _getGhosts;
 
+  List<PhantomProfileModel> _filteredPhantoms = [];
   List<PhantomProfileModel> _phantoms = [];
   List<GhostProfileModel> _ghosts = [];
 
-  List<PhantomProfileModel> get phantoms => _phantoms;
+  List<PhantomProfileModel> get phantoms => _filteredPhantoms;
 
   List<GhostProfileModel> get ghosts => _ghosts;
 
@@ -28,6 +29,7 @@ class RegimentCodexProvider with ChangeNotifier {
       (Either<CodexException, List<PhantomProfileModel>> result) {
         throwExceptionIfLeft(result);
         _phantoms = result.getOrElse(() => []);
+        _filteredPhantoms = _phantoms;
         notifyListeners();
         return;
       },
@@ -43,5 +45,20 @@ class RegimentCodexProvider with ChangeNotifier {
         return;
       },
     );
+  }
+
+  void searchPhantom(String searchQuery) {
+    if (searchQuery.isEmpty) return _resetSearch();
+
+    _filteredPhantoms = _phantoms.where((element) {
+      final String phantomName = (element.name ?? '').toLowerCase();
+      return phantomName.startsWith(searchQuery.toLowerCase());
+    }).toList();
+    notifyListeners();
+  }
+
+  void _resetSearch() {
+    _filteredPhantoms = _phantoms;
+    notifyListeners();
   }
 }

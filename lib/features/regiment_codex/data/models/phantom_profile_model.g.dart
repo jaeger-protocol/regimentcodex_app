@@ -19,7 +19,9 @@ _$_PhantomProfileModel _$$_PhantomProfileModelFromJson(
       twitter: json['twitter'] as String?,
       personalWallet: json['personal_wallet'] as String?,
       sigil: json['sigil'] as String?,
-      number: json['number'] as int?,
+      regiment: json['regiment'] == null
+          ? null
+          : PhantomRegiment.fromJson(json['regiment'] as Map<String, dynamic>),
       ghosts: (json['ghosts'] as List<dynamic>?)
           ?.map((e) => GhostProfileModel.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -38,6 +40,6 @@ Map<String, dynamic> _$$_PhantomProfileModelToJson(
       'twitter': instance.twitter,
       'personal_wallet': instance.personalWallet,
       'sigil': instance.sigil,
-      'number': instance.number,
+      'regiment': instance.regiment,
       'ghosts': instance.ghosts,
     };

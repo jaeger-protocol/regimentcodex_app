@@ -1,7 +1,27 @@
 part of regiment_codex;
 
-class RegimentCodexOverview extends StatelessWidget {
+class RegimentCodexOverview extends StatefulWidget {
   const RegimentCodexOverview({Key? key}) : super(key: key);
+
+  @override
+  State<RegimentCodexOverview> createState() => _RegimentCodexOverviewState();
+}
+
+class _RegimentCodexOverviewState extends State<RegimentCodexOverview> {
+  Future<void> _loadPhantoms() {
+    return context.read<RegimentCodexProvider>().getPhantoms();
+  }
+
+  void _loadNFTCollection() {
+    context.read<NFTCollectionProvider>().getFeaturedCollection();
+  }
+
+  @override
+  void initState() {
+    _loadPhantoms();
+    _loadNFTCollection();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {

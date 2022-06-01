@@ -1,5 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:regimentcodex/features/regiment_codex/data/models/ghost_profile_model.dart';
+import 'package:regimentcodex/features/regiment_codex/data/models/phantom_regiment_model.dart';
 
 part 'phantom_profile_model.freezed.dart';
 
@@ -18,7 +19,7 @@ class PhantomProfileModel with _$PhantomProfileModel {
     final String? twitter,
     @JsonKey(name: 'personal_wallet') final String? personalWallet,
     final String? sigil,
-    final int? number,
+    final PhantomRegiment? regiment,
     List<GhostProfileModel>? ghosts,
   }) = _PhantomProfileModel;
 
