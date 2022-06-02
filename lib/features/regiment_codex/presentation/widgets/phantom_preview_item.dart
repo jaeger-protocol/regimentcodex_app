@@ -212,6 +212,7 @@ class CustomBox extends StatelessWidget {
     this.margin,
     this.border,
     this.color,
+    this.alignment,
     this.borderRadius,
     this.constraints,
     this.padding,
@@ -222,6 +223,7 @@ class CustomBox extends StatelessWidget {
   final Widget? child;
   final Color? color;
   final BoxBorder? border;
+  final AlignmentGeometry? alignment;
   final BoxConstraints? constraints;
   final BorderRadiusGeometry? borderRadius;
   final EdgeInsetsGeometry? padding;
@@ -232,6 +234,7 @@ class CustomBox extends StatelessWidget {
     return Container(
       height: height,
       width: width,
+      alignment: alignment,
       padding: padding,
       margin: margin,
       constraints: constraints,

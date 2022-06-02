@@ -33,12 +33,7 @@ class _RegimentCodexOverviewState extends State<RegimentCodexOverview> {
             SizedBox(height: 50),
             PhantomPreviewHeader(),
             SizedBox(height: 50),
-            CustomBox(
-              constraints: BoxConstraints(
-                maxHeight: 100,
-                maxWidth: double.infinity,
-              ),
-            ),
+            PhantomOpenseaOverview(),
             PhantomPreviewFilerSection(),
             SizedBox(height: 800, child: PhantomsPreviewGrid()),
             SizedBox(height: 50),

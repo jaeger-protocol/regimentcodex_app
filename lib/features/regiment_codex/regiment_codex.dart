@@ -8,6 +8,7 @@ import 'package:regimentcodex/core/errors/exceptions.dart';
 import 'package:regimentcodex/core/mock_data/mock_data.dart';
 import 'package:regimentcodex/core/network/network_info.dart';
 import 'package:regimentcodex/core/use_cases/use_case.dart';
+import 'package:regimentcodex/features/nft_collection/nft_collection.dart';
 import 'package:regimentcodex/features/nft_collection/presentation/providers/nft_collection_provider.dart';
 import 'package:regimentcodex/features/regiment_codex/data/models/ghost_profile_model.dart';
 import 'package:regimentcodex/features/regiment_codex/data/models/phantom_profile_model.dart';
