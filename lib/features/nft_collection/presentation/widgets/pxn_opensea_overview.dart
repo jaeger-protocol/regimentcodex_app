@@ -1,11 +1,11 @@
 part of nft_collection;
 
-class PhantomOpenseaOverview extends StatelessWidget {
-  const PhantomOpenseaOverview({Key? key}) : super(key: key);
+class PXNOpenseaOverview extends StatelessWidget {
+  const PXNOpenseaOverview({Key? key}) : super(key: key);
 
   static List<ProjectStatsItem> projectStats(NFTCollectionModel? project) {
     return [
-      ProjectStatsItem(label: 'Ghosts', stat: project?.count),
+      ProjectStatsItem(label: 'Items', stat: project?.count),
       ProjectStatsItem(label: 'Owners', stat: project?.owners),
       ProjectStatsItem(
         label: 'Floor',
@@ -39,25 +39,25 @@ class PhantomOpenseaOverview extends StatelessWidget {
       ),
       child: Consumer<NFTCollectionProvider>(
           builder: (context, NFTCollectionProvider provider, _) {
-        final project = provider.featuredCollection;
-        return LayoutBuilder(builder: (context, BoxConstraints constraints) {
-          if (constraints.maxWidth < 820) {
-            return SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
+            final project = provider.featuredCollection;
+            return LayoutBuilder(builder: (context, BoxConstraints constraints) {
+              if (constraints.maxWidth < 820) {
+                return SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: projectStats(project),
+                  ),
+                );
+              }
+              return Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: projectStats(project),
-              ),
-            );
-          }
-          return Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: projectStats(project),
-          );
-        });
-      }),
+              );
+            });
+          }),
     );
   }
 }

@@ -7,7 +7,7 @@ part 'ghost_profile_model.g.dart';
 @Freezed()
 class GhostProfileModel with _$GhostProfileModel {
   factory GhostProfileModel({
-    final int? id,
+    final String? id,
     final String? name,
     final String? image,
     final String? openseaLink,

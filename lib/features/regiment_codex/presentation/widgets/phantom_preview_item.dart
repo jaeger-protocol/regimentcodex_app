@@ -19,7 +19,7 @@ class PhantomsPreviewGrid extends StatelessWidget {
               key: Key('Phantom <${phantom.id}> - <${phantom.name}>'),
               itemId: phantom.id,
               onPressedOrClicked: () {
-                provider.openPhantomProfile(context, phantom.id);
+                 provider.openPhantomProfile(context, phantom.id);
               },
               footerBuilder: (Color color) {
                 return PhantomPreviewFooter(name: phantom.name, color: color);

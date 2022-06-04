@@ -1,18 +1,17 @@
 part of regiment_codex;
 
-class RegimentCodexOverview extends StatefulWidget {
-  const RegimentCodexOverview({Key? key}) : super(key: key);
+class PhantomProfileOverview extends StatefulWidget {
+  const PhantomProfileOverview({Key? key}) : super(key: key);
 
-  static const String route = 'regiment-codex-overview';
+  static const String route = '/phantom-profile-overview';
 
   @override
-  State<RegimentCodexOverview> createState() => _RegimentCodexOverviewState();
+  State<PhantomProfileOverview> createState() => _PhantomProfileOverviewState();
 }
 
-class _RegimentCodexOverviewState extends State<RegimentCodexOverview> {
-  Future<void> _loadPhantoms() async {
-      context.read<RegimentCodexProvider>().getPhantoms();
-      context.read<RegimentCodexProvider>().getGhosts();
+class _PhantomProfileOverviewState extends State<PhantomProfileOverview> {
+  Future<void> _loadPhantoms() {
+    return context.read<RegimentCodexProvider>().getPhantoms();
   }
 
   void _loadNFTCollection() {
@@ -35,11 +34,11 @@ class _RegimentCodexOverviewState extends State<RegimentCodexOverview> {
           child: ListView(
             children: const [
               SizedBox(height: 50),
-              PXNPreviewHeader(),
+              PhantomPreviewHeader(),
               SizedBox(height: 50),
-              PXNOpenseaOverview(),
+              PhantomOpenseaOverview(),
               PhantomPreviewFilerSection(),
-              SizedBox(height: 800, child: PhantomsPreviewGrid()),
+              SizedBox(height: 800, child: GhostsPreviewGrid()),
               SizedBox(height: 50),
             ],
           ),

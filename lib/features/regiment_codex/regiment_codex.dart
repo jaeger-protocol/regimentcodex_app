@@ -24,6 +24,8 @@ part 'domain/repository/regiment_codex_repository.dart';
 part 'domain/use_cases/get_ghosts.dart';
 part 'domain/use_cases/get_phantoms.dart';
 part 'presentation/screens/regiment_codex_overview.dart';
+part 'presentation/screens/phantom_profile_overview.dart';
 part 'presentation/widgets/phantom_filter_section.dart';
 part 'presentation/widgets/phantom_header_section.dart';
 part 'presentation/widgets/phantom_preview_item.dart';
+part 'presentation/widgets/ghost_preview_item.dart';

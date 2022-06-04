@@ -62,8 +62,8 @@ class RegimentCodexProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  void openPhantomProfile(BuildContext context, int? id) {
-    if (id == null) return;
-    Navigator.of(context).pushNamed('PhantomProfile.route');
+  Future<dynamic> openPhantomProfile(BuildContext context, int? id) async {
+    if (id == null) return null;
+    return Navigator.of(context).pushNamed(PhantomProfileOverview.route);
   }
 }

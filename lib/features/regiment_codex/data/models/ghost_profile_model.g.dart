@@ -8,7 +8,7 @@ part of 'ghost_profile_model.dart';
 
 _$_GhostProfileModel _$$_GhostProfileModelFromJson(Map<String, dynamic> json) =>
     _$_GhostProfileModel(
-      id: json['id'] as int?,
+      id: json['id'] as String?,
       name: json['name'] as String?,
       image: json['image'] as String?,
       openseaLink: json['openseaLink'] as String?,

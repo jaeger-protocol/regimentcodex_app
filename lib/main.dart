@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:regimentcodex/core/config/providers/regiment_provider.dart';
+import 'package:regimentcodex/core/config/routes.dart';
 import 'package:regimentcodex/core/presentation/theme/regiment_codex_theme.dart';
 import 'package:regimentcodex/features/regiment_codex/regiment_codex.dart';
 
@@ -18,10 +19,9 @@ class RegimentCodex extends StatelessWidget {
       child: MaterialApp(
         title: 'Regiment Codex',
         theme: RegimentCodexTheme.main,
+        routes: routes(context),
         debugShowCheckedModeBanner: false,
-        home: const Scaffold(
-          body: RegimentCodexOverview(),
-        ),
+        home: const RegimentCodexOverview(),
       ),
     );
   }

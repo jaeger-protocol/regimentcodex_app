@@ -20,7 +20,7 @@ GhostProfileModel _$GhostProfileModelFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$GhostProfileModel {
-  int? get id => throw _privateConstructorUsedError;
+  String? get id => throw _privateConstructorUsedError;
   String? get name => throw _privateConstructorUsedError;
   String? get image => throw _privateConstructorUsedError;
   String? get openseaLink => throw _privateConstructorUsedError;
@@ -41,7 +41,7 @@ abstract class $GhostProfileModelCopyWith<$Res> {
           GhostProfileModel value, $Res Function(GhostProfileModel) then) =
       _$GhostProfileModelCopyWithImpl<$Res>;
   $Res call(
-      {int? id,
+      {String? id,
       String? name,
       String? image,
       String? openseaLink,
@@ -73,7 +73,7 @@ class _$GhostProfileModelCopyWithImpl<$Res>
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -110,7 +110,7 @@ abstract class _$$_GhostProfileModelCopyWith<$Res>
       __$$_GhostProfileModelCopyWithImpl<$Res>;
   @override
   $Res call(
-      {int? id,
+      {String? id,
       String? name,
       String? image,
       String? openseaLink,
@@ -144,7 +144,7 @@ class __$$_GhostProfileModelCopyWithImpl<$Res>
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -190,7 +190,7 @@ class _$_GhostProfileModel implements _GhostProfileModel {
       _$$_GhostProfileModelFromJson(json);
 
   @override
-  final int? id;
+  final String? id;
   @override
   final String? name;
   @override
@@ -259,7 +259,7 @@ class _$_GhostProfileModel implements _GhostProfileModel {
 
 abstract class _GhostProfileModel implements GhostProfileModel {
   factory _GhostProfileModel(
-      {final int? id,
+      {final String? id,
       final String? name,
       final String? image,
       final String? openseaLink,
@@ -271,7 +271,7 @@ abstract class _GhostProfileModel implements GhostProfileModel {
       _$_GhostProfileModel.fromJson;
 
   @override
-  int? get id => throw _privateConstructorUsedError;
+  String? get id => throw _privateConstructorUsedError;
   @override
   String? get name => throw _privateConstructorUsedError;
   @override

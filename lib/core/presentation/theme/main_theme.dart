@@ -3,6 +3,16 @@ part of regiment_codex_theme;
 const double _defaultRadius = 8.0;
 
 final ThemeData _mainTheme = ThemeData(
+  pageTransitionsTheme: PageTransitionsTheme(
+    builders: <TargetPlatform, PageTransitionsBuilder>{
+      TargetPlatform.android: RegimentCodexPageTransitionAnimation(),
+      TargetPlatform.iOS: RegimentCodexPageTransitionAnimation(),
+      TargetPlatform.macOS: RegimentCodexPageTransitionAnimation(),
+      TargetPlatform.windows: RegimentCodexPageTransitionAnimation(),
+      TargetPlatform.linux: RegimentCodexPageTransitionAnimation(),
+      TargetPlatform.fuchsia: RegimentCodexPageTransitionAnimation(),
+    }
+  ),
   androidOverscrollIndicator: AndroidOverscrollIndicator.stretch,
   scaffoldBackgroundColor: const Color.fromRGBO(6, 6, 8, 1.0),
   primaryColor: const Color.fromRGBO(6, 6, 8, 1.0),
@@ -26,7 +36,7 @@ final ThemeData _mainTheme = ThemeData(
       color: Color.fromRGBO(255, 255, 255, 1.0),
     ),
     headline2: TextStyle(
-      fontSize: 36,
+      fontSize: 40,
       color: Color.fromRGBO(255, 255, 255, 1.0),
     ),
     headline3: TextStyle(

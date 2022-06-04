@@ -16,11 +16,12 @@ import 'package:regimentcodex/core/presentation/widgets/custom_box.dart';
 import 'package:regimentcodex/core/use_cases/use_case.dart';
 import 'package:regimentcodex/features/nft_collection/data/models/nft_collection_model.dart';
 import 'package:regimentcodex/features/nft_collection/presentation/providers/nft_collection_provider.dart';
-import 'package:regimentcodex/features/regiment_codex/regiment_codex.dart';
 
 part 'domain/use_cases/get_featured_collection.dart';
 part 'domain/repository/nft_collection_repository.dart';
 part 'data/data_source/remote_data_source.dart';
 part 'data/repository/repository_impl.dart';
 part 'presentation/widgets/phantom_opensea_overview.dart';
+part 'presentation/widgets/pxn_opensea_overview.dart';
+part 'presentation/widgets/pxn_header_section.dart';
 part 'presentation/widgets/project_stats_item.dart';
