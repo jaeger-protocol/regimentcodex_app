@@ -12,6 +12,7 @@ import 'package:regimentcodex/core/config/secrets.dart';
 import 'package:regimentcodex/core/errors/exceptions.dart';
 import 'package:regimentcodex/core/helpers/http_helper.dart';
 import 'package:regimentcodex/core/network/network_info.dart';
+import 'package:regimentcodex/core/presentation/widgets/custom_box.dart';
 import 'package:regimentcodex/core/use_cases/use_case.dart';
 import 'package:regimentcodex/features/nft_collection/data/models/nft_collection_model.dart';
 import 'package:regimentcodex/features/nft_collection/presentation/providers/nft_collection_provider.dart';

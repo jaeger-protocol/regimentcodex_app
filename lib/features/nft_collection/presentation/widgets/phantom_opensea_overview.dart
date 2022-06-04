@@ -34,14 +34,14 @@ class PhantomOpenseaOverview extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomBox(
       constraints: const BoxConstraints(
-        maxHeight: 100,
+        maxHeight: 120,
         maxWidth: double.infinity,
       ),
       child: Consumer<NFTCollectionProvider>(
           builder: (context, NFTCollectionProvider provider, _) {
         final project = provider.featuredCollection;
         return LayoutBuilder(builder: (context, BoxConstraints constraints) {
-          if (constraints.maxWidth < 800) {
+          if (constraints.maxWidth < 820) {
             return SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(

@@ -61,4 +61,9 @@ class RegimentCodexProvider with ChangeNotifier {
     _filteredPhantoms = _phantoms;
     notifyListeners();
   }
+
+  void openPhantomProfile(BuildContext context, int? id) {
+    if (id == null) return;
+    Navigator.of(context).pushNamed('PhantomProfile.route');
+  }
 }
