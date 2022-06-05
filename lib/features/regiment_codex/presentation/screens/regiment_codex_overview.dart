@@ -34,7 +34,7 @@ class _RegimentCodexOverviewState extends State<RegimentCodexOverview> {
           width: 1400,
           child: ListView(
             children: const [
-              SizedBox(height: 50),
+              CodesHeader(),
               PXNPreviewHeader(),
               SizedBox(height: 50),
               PXNOpenseaOverview(),

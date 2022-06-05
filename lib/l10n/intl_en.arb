@@ -1,0 +1,19 @@
+{
+  "@@locale": "en",
+  "builtByCommunity": "Built by the community, for the community.",
+  "regimentCodex": "Regiment Codex",
+  "findYour": "Find your",
+  "introDescription1": "Having trouble finding the right Regiment you want to join? The regiment codex was built to help you on that, and it’s not it’s only purpose, it has also been built for those who are hard-core PxN simps!",
+  "introDescription2": "Find out more about the Phantoms leading each regiment, the perks, their personalities, the regiment performance and the ghost serving a purpose for them!",
+  "floor": "Floor",
+  "ghosts": "Ghosts",
+  "ghost": "Ghost",
+  "item": "{quantity, plural, one {Item} other {Items}}",
+  "items": "Items",
+  "owner": "Owners",
+  "numberOfSales": "Number of Sales",
+  "pxn": "PxN",
+  "regiment": "Regiment",
+  "volumeTraded": "Volume Traded",
+  "highestLastSales": "Highest Last Sale"
+}

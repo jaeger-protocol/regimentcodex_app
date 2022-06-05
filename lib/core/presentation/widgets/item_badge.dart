@@ -11,10 +11,15 @@ class ItemBadge extends StatelessWidget {
   final int? id;
   final String? sigil;
 
-  Widget get badgeItem {
+  Widget badgeItem(BuildContext context) {
     if (id != null) {
-      return Center(
-        child: Text('${id ?? '-'}', maxLines: 1),
+      return Padding(
+        padding: const EdgeInsets.all(1.0),
+        child: Text(
+          '${id ?? '-'}',
+          maxLines: 1,
+          style: Theme.of(context).textTheme.headline6,
+        ),
       );
     }
     if (sigil != null && sigil!.isNotEmpty) {
@@ -40,7 +45,7 @@ class ItemBadge extends StatelessWidget {
           topRight: Radius.circular(10),
           bottomLeft: Radius.circular(10),
         ),
-        child: FittedBox(child: badgeItem),
+        child: FittedBox(child: badgeItem(context)),
       ),
     );
   }

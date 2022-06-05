@@ -3,16 +3,15 @@ part of regiment_codex_theme;
 const double _defaultRadius = 8.0;
 
 final ThemeData _mainTheme = ThemeData(
-  pageTransitionsTheme: PageTransitionsTheme(
-    builders: <TargetPlatform, PageTransitionsBuilder>{
-      TargetPlatform.android: RegimentCodexPageTransitionAnimation(),
-      TargetPlatform.iOS: RegimentCodexPageTransitionAnimation(),
-      TargetPlatform.macOS: RegimentCodexPageTransitionAnimation(),
-      TargetPlatform.windows: RegimentCodexPageTransitionAnimation(),
-      TargetPlatform.linux: RegimentCodexPageTransitionAnimation(),
-      TargetPlatform.fuchsia: RegimentCodexPageTransitionAnimation(),
-    }
-  ),
+  pageTransitionsTheme:
+      PageTransitionsTheme(builders: <TargetPlatform, PageTransitionsBuilder>{
+    TargetPlatform.android: RegimentCodexPageTransitionAnimation(),
+    TargetPlatform.iOS: RegimentCodexPageTransitionAnimation(),
+    TargetPlatform.macOS: RegimentCodexPageTransitionAnimation(),
+    TargetPlatform.windows: RegimentCodexPageTransitionAnimation(),
+    TargetPlatform.linux: RegimentCodexPageTransitionAnimation(),
+    TargetPlatform.fuchsia: RegimentCodexPageTransitionAnimation(),
+  }),
   androidOverscrollIndicator: AndroidOverscrollIndicator.stretch,
   scaffoldBackgroundColor: const Color.fromRGBO(6, 6, 8, 1.0),
   primaryColor: const Color.fromRGBO(6, 6, 8, 1.0),
@@ -20,44 +19,53 @@ final ThemeData _mainTheme = ThemeData(
   textSelectionTheme: const TextSelectionThemeData(
     cursorColor: Color.fromRGBO(77, 182, 172, 1.0),
   ),
-  textTheme: const TextTheme(
+  textTheme: TextTheme(
     caption: TextStyle(
       fontSize: 14,
       letterSpacing: 0.1,
       fontWeight: FontWeight.w400,
-      color: Color.fromRGBO(128, 128, 128, 1.0),
+      fontFamily: RegimentCodexTheme.secondaryFont,
+      color: const Color.fromRGBO(128, 128, 128, 1.0),
     ),
     bodyText1: TextStyle(
-      fontWeight: FontWeight.w500,
-      color: Color.fromRGBO(255, 255, 255, 1.0),
+      fontSize: 15,
+      fontFamily: RegimentCodexTheme.defaultFont,
+      color: const Color.fromRGBO(255, 255, 255, 1.0),
     ),
     bodyText2: TextStyle(
-      fontWeight: FontWeight.w400,
-      color: Color.fromRGBO(255, 255, 255, 1.0),
+      fontSize: 15,
+      fontFamily: RegimentCodexTheme.defaultFont,
+      color: const Color.fromRGBO(255, 255, 255, 1.0),
+    ),
+    headline1: TextStyle(
+      fontSize: 90,
+      fontFamily: RegimentCodexTheme.secondaryFont,
+      color: const Color.fromRGBO(255, 255, 255, 1.0),
     ),
     headline2: TextStyle(
-      fontSize: 40,
-      color: Color.fromRGBO(255, 255, 255, 1.0),
+      fontSize: 60,
+      fontFamily: RegimentCodexTheme.defaultFont,
+      color: const Color.fromRGBO(255, 255, 255, 1.0),
     ),
     headline3: TextStyle(
       fontSize: 34,
-      fontWeight: FontWeight.w500,
-      color: Color.fromRGBO(255, 255, 255, 1.0),
+      fontFamily: RegimentCodexTheme.defaultFont,
+      color: const Color.fromRGBO(255, 255, 255, 1.0),
     ),
     headline4: TextStyle(
       fontSize: 28,
-      fontWeight: FontWeight.w500,
-      color: Color.fromRGBO(255, 255, 255, 1.0),
+      fontFamily: RegimentCodexTheme.secondaryFont,
+      color: const Color.fromRGBO(255, 255, 255, 1.0),
     ),
     headline5: TextStyle(
       fontSize: 24,
-      fontWeight: FontWeight.w700,
-      color: Color.fromRGBO(255, 255, 255, 1.0),
+      fontFamily: RegimentCodexTheme.secondaryFont,
+      color: const Color.fromRGBO(255, 255, 255, 1.0),
     ),
     headline6: TextStyle(
       fontSize: 18,
-      fontWeight: FontWeight.w500,
-      color: Color.fromRGBO(255, 255, 255, 1.0),
+      fontFamily: RegimentCodexTheme.secondaryFont,
+      color: const Color.fromRGBO(255, 255, 255, 1.0),
     ),
   ),
   dataTableTheme: DataTableThemeData(

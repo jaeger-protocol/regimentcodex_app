@@ -26,6 +26,13 @@ dependencies:
   intl: ^0.17.0
   animations: ^2.0.3
 
+  flutter_localizations:
+    sdk: flutter
+
+flutter_intl:
+  enabled: true
+  class_name: RCLocal
+
 dev_dependencies:
 
   flutter_lints: ^2.0.0
@@ -47,3 +54,19 @@ flutter:
 
   assets:
     - assets/
+
+  fonts:
+    - family: helvetica
+      fonts:
+        - asset: assets/fonts/helvetica.ttf
+        - asset: assets/fonts/helvetica_bold.ttf
+        - asset: assets/fonts/helvetica_bold-oblique.ttf
+        - asset: assets/fonts/helvetica_compressed.otf
+        - asset: assets/fonts/helvetica_light.ttf
+        - asset: assets/fonts/helvetica_oblique.ttf
+        - asset: assets/fonts/helvetica_rounded-bold.otf
+
+    - family: oxta
+      fonts:
+        - asset: assets/fonts/oxta.otf
+        - asset: assets/fonts/oxta.ttf

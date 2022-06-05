@@ -6,6 +6,7 @@ class ProjectStatsItem extends StatelessWidget {
     required this.stat,
     this.isCurrency = false,
     this.currency,
+    super.key,
   });
 
   final String label;

@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import 'package:regimentcodex/core/errors/exceptions.dart';
 import 'package:regimentcodex/core/mock_data/mock_data.dart';
 import 'package:regimentcodex/core/network/network_info.dart';
+import 'package:regimentcodex/core/presentation/widgets/codex_header.dart';
 import 'package:regimentcodex/core/presentation/widgets/custom_box.dart';
 import 'package:regimentcodex/core/presentation/widgets/item_info_text.dart';
 import 'package:regimentcodex/core/presentation/widgets/item_preview.dart';

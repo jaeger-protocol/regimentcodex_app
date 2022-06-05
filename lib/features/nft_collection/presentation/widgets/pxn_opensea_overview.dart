@@ -41,7 +41,7 @@ class PXNOpenseaOverview extends StatelessWidget {
           builder: (context, NFTCollectionProvider provider, _) {
             final project = provider.featuredCollection;
             return LayoutBuilder(builder: (context, BoxConstraints constraints) {
-              if (constraints.maxWidth < 820) {
+              if (constraints.maxWidth < 860) {
                 return SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
