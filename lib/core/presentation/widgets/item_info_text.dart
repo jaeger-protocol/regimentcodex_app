@@ -16,7 +16,7 @@ class ItemInfoText extends StatelessWidget {
       data,
       maxLines: 1,
       overflow: TextOverflow.ellipsis,
-      style: Theme.of(context).textTheme.headline5?.copyWith(
+      style: Theme.of(context).textTheme.headline6?.copyWith(
             color: color,
           ),
     );

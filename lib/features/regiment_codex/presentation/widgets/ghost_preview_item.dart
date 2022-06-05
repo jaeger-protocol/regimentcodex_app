@@ -17,14 +17,14 @@ class GhostsPreviewGrid extends StatelessWidget {
             final ghost = provider.ghosts[index];
             return ItemPreview(
               key: Key('Ghost <${ghost.id}> - <${ghost.name}>'),
-              // sigil: ,
+              image: ghost.image,
               onPressedOrClicked: () {
                 provider.openPhantomProfile(context, null);
               },
               footerBuilder: (Color color) {
                 return GhostPreviewFooter(
-                  price: 'ghost.price',
-                  ghostId: ghost.id,
+                  price: '12',
+                  ghostName: ghost.name?.split(' ').last,
                   color: color,
                 );
               },
@@ -38,13 +38,13 @@ class GhostsPreviewGrid extends StatelessWidget {
 
 class GhostPreviewFooter extends StatelessWidget {
   const GhostPreviewFooter({
-    required this.ghostId,
+    required this.ghostName,
     required this.price,
     required this.color,
     super.key,
   });
 
-  final String? ghostId;
+  final String? ghostName;
   final String? price;
   final Color color;
 
@@ -53,8 +53,9 @@ class GhostPreviewFooter extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        Expanded(child: ItemInfoText('$ghostId', color: color)),
-        Expanded(child: ItemInfoText('$price', color: color)),
+        ItemInfoText('$ghostName', color: color),
+        const Spacer(),
+        Expanded(child: ItemInfoText('$price ETH', color: color)),
       ],
     );
   }

@@ -33,6 +33,22 @@ class ItemPreview extends StatelessWidget {
     elementColor ??= Theme.of(context).colorScheme.onSurface;
   }
 
+  Widget itemImage() {
+    final isNetworkImage = image?.contains('https') ?? false;
+    if (isNetworkImage && image!.isNotEmpty) {
+      return Image.network(
+        image!,
+        width: double.infinity,
+        fit: BoxFit.cover,
+      );
+    }
+    return Image.asset(
+      image ?? Assets.phantomPlaceholder.path,
+      width: double.infinity,
+      fit: BoxFit.cover,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return ItemPreviewBody(
@@ -51,11 +67,7 @@ class ItemPreview extends StatelessWidget {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(10),
-                      child: Image.asset(
-                        image ?? Assets.phantomPlaceholder.path,
-                        width: double.infinity,
-                        fit: BoxFit.cover,
-                      ),
+                      child: itemImage(),
                     ),
                     const SizedBox(height: 20),
                     footerBuilder(elementColor!),
