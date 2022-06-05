@@ -7,14 +7,14 @@ class CodesHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding: const EdgeInsets.fromLTRB(16.0, 30.0, 16.0, 16.0),
       child: Row(
         children: [
           Text(
             RCLocal.of(context).pxn,
             style: Theme.of(context).textTheme.headline5?.copyWith(
-              letterSpacing: 5,
-            ),
+                  letterSpacing: 5,
+                ),
           ),
           const Spacer(),
         ],

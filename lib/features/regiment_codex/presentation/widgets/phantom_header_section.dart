@@ -7,14 +7,6 @@ class PhantomPreviewHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Placeholder(fallbackHeight: 170, fallbackWidth: 100),
-        const Padding(
-          padding: EdgeInsets.symmetric(vertical: 50.0, horizontal: 80),
-          child: Text(
-            'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable. If you are going to use a passage of Lorem Ipsum.',
-            textAlign: TextAlign.center,
-          ),
-        ),
         SizedBox(
           height: 400,
           child: Row(

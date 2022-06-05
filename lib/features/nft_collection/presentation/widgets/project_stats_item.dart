@@ -29,7 +29,7 @@ class ProjectStatsItem extends StatelessWidget {
           decimalDigits: 1,
         ).format(stat).trim();
       }
-    } catch (e) {
+    } catch (_) {
       return NumberFormat.currency(
         name: '',
         decimalDigits: 1,
@@ -40,7 +40,7 @@ class ProjectStatsItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+      padding: const EdgeInsets.symmetric(horizontal: 10.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -49,7 +49,12 @@ class ProjectStatsItem extends StatelessWidget {
             style: Theme.of(context).textTheme.headline4,
           ),
           const SizedBox(height: 8.0),
-          Text(label),
+          Text(
+            label,
+            style: Theme.of(context).textTheme.bodyText2?.copyWith(
+                  fontSize: 16,
+                ),
+          ),
         ],
       ),
     );
