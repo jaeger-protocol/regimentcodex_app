@@ -1,5 +1,7 @@
 library regiment_codex;
 
+import 'dart:ui';
+
 import 'package:dartz/dartz.dart' hide State;
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -16,6 +18,7 @@ import 'package:regimentcodex/features/nft_collection/presentation/providers/nft
 import 'package:regimentcodex/features/regiment_codex/data/models/ghost_profile_model.dart';
 import 'package:regimentcodex/features/regiment_codex/data/models/phantom_profile_model.dart';
 import 'package:regimentcodex/features/regiment_codex/presentation/providers/regiment_codex_provider.dart';
+import 'package:regimentcodex/gen/assets.gen.dart';
 
 part 'data/data_sources/codex_data_source.dart';
 part 'data/data_sources/local_data_source.dart';
@@ -30,3 +33,4 @@ part 'presentation/widgets/phantom_filter_section.dart';
 part 'presentation/widgets/phantom_header_section.dart';
 part 'presentation/widgets/phantom_preview_item.dart';
 part 'presentation/widgets/ghost_preview_item.dart';
+part 'presentation/widgets/ghost_profile_modal.dart';

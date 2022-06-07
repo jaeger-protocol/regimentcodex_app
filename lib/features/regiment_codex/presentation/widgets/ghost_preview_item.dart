@@ -19,7 +19,7 @@ class GhostsPreviewGrid extends StatelessWidget {
               key: Key('Ghost <${ghost.id}> - <${ghost.name}>'),
               image: ghost.image,
               onPressedOrClicked: () {
-                provider.openPhantomProfile(context, null);
+                provider.openGhostProfile(context);
               },
               footerBuilder: (Color color) {
                 return GhostPreviewFooter(

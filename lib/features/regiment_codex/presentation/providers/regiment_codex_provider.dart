@@ -2,6 +2,7 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 import 'package:regimentcodex/core/errors/exceptions.dart';
 import 'package:regimentcodex/core/functions.dart';
+import 'package:regimentcodex/core/presentation/widgets/modal.dart';
 import 'package:regimentcodex/core/use_cases/use_case.dart';
 import 'package:regimentcodex/features/regiment_codex/data/models/ghost_profile_model.dart';
 import 'package:regimentcodex/features/regiment_codex/data/models/phantom_profile_model.dart';
@@ -65,5 +66,14 @@ class RegimentCodexProvider with ChangeNotifier {
   Future<dynamic> openPhantomProfile(BuildContext context, int? id) async {
     if (id == null) return null;
     return Navigator.of(context).pushNamed(PhantomProfileOverview.route);
+  }
+
+  Future<dynamic> openGhostProfile(BuildContext context) async {
+    showCodexModal(
+      context: context,
+      builder: (_) {
+        return const GhostProfile();
+      },
+    );
   }
 }
