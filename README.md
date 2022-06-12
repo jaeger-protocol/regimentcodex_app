@@ -1,6 +1,6 @@
 # Regiment Codex (page preview)
 
-Lurking in the darkness are the ghosts of web3, lead by the predetory phantoms they are unstoppable
+Lurking in the darkness are the ghosts of web3, lead by the predatory phantoms they are unstoppable
 
 # Main Screen
 
