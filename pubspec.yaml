@@ -54,6 +54,7 @@ flutter:
 
   assets:
     - assets/
+    - assets/phantom_profile/
 
   fonts:
     - family: helvetica

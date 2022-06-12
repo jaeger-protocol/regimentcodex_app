@@ -16,6 +16,7 @@ import 'package:regimentcodex/core/presentation/widgets/custom_box.dart';
 import 'package:regimentcodex/core/use_cases/use_case.dart';
 import 'package:regimentcodex/features/nft_collection/data/models/nft_collection_model.dart';
 import 'package:regimentcodex/features/nft_collection/presentation/providers/nft_collection_provider.dart';
+import 'package:regimentcodex/gen/assets.gen.dart';
 import 'package:regimentcodex/generated/l10n.dart';
 
 part 'domain/use_cases/get_featured_collection.dart';

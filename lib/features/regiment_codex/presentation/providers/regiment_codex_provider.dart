@@ -22,6 +22,7 @@ class RegimentCodexProvider with ChangeNotifier {
   List<GhostProfileModel> _ghosts = [];
 
   List<PhantomProfileModel> get phantoms => _filteredPhantoms;
+  PhantomProfileModel get demoPhantom => phantoms[0];
 
   List<GhostProfileModel> get ghosts => _ghosts;
 

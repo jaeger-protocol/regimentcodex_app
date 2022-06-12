@@ -60,41 +60,11 @@ class RCLocal {
     );
   }
 
-  /// `Regiment Codex`
-  String get regimentCodex {
-    return Intl.message(
-      'Regiment Codex',
-      name: 'regimentCodex',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Find your`
   String get findYour {
     return Intl.message(
       'Find your',
       name: 'findYour',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Having trouble finding the right Regiment you want to join? The regiment codex was built to help you on that, and it’s not it’s only purpose, it has also been built for those who are hard-core PxN simps!`
-  String get introDescription1 {
-    return Intl.message(
-      'Having trouble finding the right Regiment you want to join? The regiment codex was built to help you on that, and it’s not it’s only purpose, it has also been built for those who are hard-core PxN simps!',
-      name: 'introDescription1',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Find out more about the Phantoms leading each regiment, the perks, their personalities, the regiment performance and the ghost serving a purpose for them!`
-  String get introDescription2 {
-    return Intl.message(
-      'Find out more about the Phantoms leading each regiment, the perks, their personalities, the regiment performance and the ghost serving a purpose for them!',
-      name: 'introDescription2',
       desc: '',
       args: [],
     );
@@ -125,6 +95,36 @@ class RCLocal {
     return Intl.message(
       'Ghost',
       name: 'ghost',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Highest Last Sale`
+  String get highestLastSales {
+    return Intl.message(
+      'Highest Last Sale',
+      name: 'highestLastSales',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Having trouble finding the right Regiment you want to join? The regiment codex was built to help you on that, and it’s not it’s only purpose, it has also been built for those who are hard-core PxN simps!`
+  String get introDescription1 {
+    return Intl.message(
+      'Having trouble finding the right Regiment you want to join? The regiment codex was built to help you on that, and it’s not it’s only purpose, it has also been built for those who are hard-core PxN simps!',
+      name: 'introDescription1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Find out more about the Phantoms leading each regiment, the perks, their personalities, the regiment performance and the ghost serving a purpose for them!`
+  String get introDescription2 {
+    return Intl.message(
+      'Find out more about the Phantoms leading each regiment, the perks, their personalities, the regiment performance and the ghost serving a purpose for them!',
+      name: 'introDescription2',
       desc: '',
       args: [],
     );
@@ -182,11 +182,41 @@ class RCLocal {
     );
   }
 
+  /// `Personality`
+  String get personality {
+    return Intl.message(
+      'Personality',
+      name: 'personality',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reg Perks`
+  String get regPerks {
+    return Intl.message(
+      'Reg Perks',
+      name: 'regPerks',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Regiment`
   String get regiment {
     return Intl.message(
       'Regiment',
       name: 'regiment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Regiment Codex`
+  String get regimentCodex {
+    return Intl.message(
+      'Regiment Codex',
+      name: 'regimentCodex',
       desc: '',
       args: [],
     );
@@ -202,13 +232,13 @@ class RCLocal {
     );
   }
 
-  /// `Highest Last Sale`
-  String get highestLastSales {
+  /// `Who is {name}?`
+  String whoIs(Object name) {
     return Intl.message(
-      'Highest Last Sale',
-      name: 'highestLastSales',
+      'Who is $name?',
+      name: 'whoIs',
       desc: '',
-      args: [],
+      args: [name],
     );
   }
 }

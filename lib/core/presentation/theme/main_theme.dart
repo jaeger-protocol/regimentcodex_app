@@ -185,4 +185,15 @@ final ThemeData _mainTheme = ThemeData(
       ),
     ),
   ),
+  checkboxTheme: CheckboxThemeData(
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(6.0)
+    ),
+    fillColor: MaterialStateProperty.all(
+      const Color.fromRGBO(255, 255, 255, 1.0),
+    ),
+    checkColor: MaterialStateProperty.all(
+      const Color.fromRGBO(6, 6, 8, 1.0),
+    ),
+  ),
 );

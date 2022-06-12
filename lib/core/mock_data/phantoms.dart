@@ -5,7 +5,7 @@ List<Map<String, dynamic>> _phantomsJson = [
     'id': 0,
     'phantom_id': '00',
     'name': 'Veezy',
-    'image': './phantoms/veezy.jpg',
+    'image': Assets.phantomProfile.veezy.path,
     'personality_traits': [
       'Sussy Baka',
       'Loves Fud',
@@ -42,7 +42,7 @@ List<Map<String, dynamic>> _phantomsJson = [
     'id': 1,
     'phantom_id': '01',
     'name': 'Arkaiju',
-    'image': './phantoms/Arkaiju.jpg',
+    'image': Assets.phantomProfile.zac.path,
     'regiment_description':
         "Phantom Operative 00. Yuri's wolf @nanoblackbox, Agent @0xygenlabs and co-founder of @nftykeys. Veezy also is a rich Berlin sussy baka.",
     'regiment_perks': [
@@ -87,7 +87,7 @@ List<Map<String, dynamic>> _phantomsJson = [
     'id': 2,
     'phantom_id': '02',
     'name': 'NFTRyRy',
-    'image': './phantoms/NFTRyRy.jpg',
+    'image': Assets.phantomProfile.zac.path,
     'regiment_description':
         "Phantom Operative 00. Yuri's wolf @nanoblackbox, Agent @0xygenlabs and co-founder of @nftykeys. Veezy also is a rich Berlin sussy baka.",
     'regiment_perks': [
@@ -222,7 +222,7 @@ List<Map<String, dynamic>> _phantomsJson = [
     'id': 5,
     'phantom_id': '05',
     'name': 'Veezy',
-    'image': './phantoms/veezy.jpg',
+    'image': Assets.phantomProfile.veezy.path,
     'regiment_description':
         "Phantom Operative 00. Yuri's wolf @nanoblackbox, Agent @0xygenlabs and co-founder of @nftykeys. Veezy also is a rich Berlin sussy baka.",
     'regiment_perks': [
@@ -267,7 +267,7 @@ List<Map<String, dynamic>> _phantomsJson = [
     'id': 6,
     'phantom_id': '06',
     'name': 'Veezy',
-    'image': './phantoms/veezy.jpg',
+    'image': Assets.phantomProfile.veezy.path,
     'regiment_description':
         "Phantom Operative 00. Yuri's wolf @nanoblackbox, Agent @0xygenlabs and co-founder of @nftykeys. Veezy also is a rich Berlin sussy baka.",
     'regiment_perks': [
@@ -312,7 +312,7 @@ List<Map<String, dynamic>> _phantomsJson = [
     'id': 7,
     'phantom_id': '07',
     'name': 'Veezy',
-    'image': './phantoms/veezy.jpg',
+    'image': Assets.phantomProfile.veezy.path,
     'regiment_description':
         "Phantom Operative 00. Yuri's wolf @nanoblackbox, Agent @0xygenlabs and co-founder of @nftykeys. Veezy also is a rich Berlin sussy baka.",
     'regiment_perks': [
@@ -357,7 +357,7 @@ List<Map<String, dynamic>> _phantomsJson = [
     'id': 8,
     'phantom_id': '08',
     'name': 'Veezy',
-    'image': './phantoms/veezy.jpg',
+    'image': Assets.phantomProfile.veezy.path,
     'regiment_description':
         "Phantom Operative 00. Yuri's wolf @nanoblackbox, Agent @0xygenlabs and co-founder of @nftykeys. Veezy also is a rich Berlin sussy baka.",
     'regiment_perks': [
@@ -402,7 +402,7 @@ List<Map<String, dynamic>> _phantomsJson = [
     'id': 9,
     'phantom_id': '09',
     'name': 'Veezy',
-    'image': './phantoms/veezy.jpg',
+    'image': Assets.phantomProfile.veezy.path,
     'regiment_description':
         "Phantom Operative 00. Yuri's wolf @nanoblackbox, Agent @0xygenlabs and co-founder of @nftykeys. Veezy also is a rich Berlin sussy baka.",
     'regiment_perks': [
@@ -447,7 +447,7 @@ List<Map<String, dynamic>> _phantomsJson = [
     'id': 10,
     'phantom_id': '10',
     'name': 'Veezy',
-    'image': './phantoms/veezy.jpg',
+    'image': Assets.phantomProfile.veezy.path,
     'regiment_description':
         "Phantom Operative 00. Yuri's wolf @nanoblackbox, Agent @0xygenlabs and co-founder of @nftykeys. Veezy also is a rich Berlin sussy baka.",
     'regiment_perks': [
@@ -492,7 +492,7 @@ List<Map<String, dynamic>> _phantomsJson = [
     'id': 11,
     'phantom_id': '11',
     'name': 'Veezy',
-    'image': './phantoms/veezy.jpg',
+    'image': Assets.phantomProfile.veezy.path,
     'regiment_description':
         "Phantom Operative 00. Yuri's wolf @nanoblackbox, Agent @0xygenlabs and co-founder of @nftykeys. Veezy also is a rich Berlin sussy baka.",
     'regiment_perks': [
@@ -537,7 +537,7 @@ List<Map<String, dynamic>> _phantomsJson = [
     'id': 12,
     'phantom_id': '12',
     'name': 'Veezy',
-    'image': './phantoms/veezy.jpg',
+    'image': Assets.phantomProfile.veezy.path,
     'regiment_description':
         "Phantom Operative 00. Yuri's wolf @nanoblackbox, Agent @0xygenlabs and co-founder of @nftykeys. Veezy also is a rich Berlin sussy baka.",
     'regiment_perks': [
@@ -582,7 +582,7 @@ List<Map<String, dynamic>> _phantomsJson = [
     'id': 13,
     'phantom_id': '13',
     'name': 'Veezy',
-    'image': './phantoms/veezy.jpg',
+    'image': Assets.phantomProfile.veezy.path,
     'regiment_description':
         "Phantom Operative 00. Yuri's wolf @nanoblackbox, Agent @0xygenlabs and co-founder of @nftykeys. Veezy also is a rich Berlin sussy baka.",
     'regiment_perks': [
@@ -672,7 +672,7 @@ List<Map<String, dynamic>> _phantomsJson = [
     'id': 15,
     'phantom_id': '15',
     'name': 'Veezy',
-    'image': './phantoms/veezy.jpg',
+    'image': Assets.phantomProfile.veezy.path,
     'regiment_description':
         "Phantom Operative 00. Yuri's wolf @nanoblackbox, Agent @0xygenlabs and co-founder of @nftykeys. Veezy also is a rich Berlin sussy baka.",
     'regiment_perks': [
@@ -762,7 +762,7 @@ List<Map<String, dynamic>> _phantomsJson = [
     'id': 17,
     'phantom_id': '17',
     'name': 'Veezy',
-    'image': './phantoms/veezy.jpg',
+    'image': Assets.phantomProfile.veezy.path,
     'regiment_description':
         "Phantom Operative 00. Yuri's wolf @nanoblackbox, Agent @0xygenlabs and co-founder of @nftykeys. Veezy also is a rich Berlin sussy baka.",
     'regiment_perks': [

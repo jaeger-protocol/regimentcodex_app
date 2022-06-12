@@ -19,6 +19,7 @@ import 'package:regimentcodex/features/regiment_codex/data/models/ghost_profile_
 import 'package:regimentcodex/features/regiment_codex/data/models/phantom_profile_model.dart';
 import 'package:regimentcodex/features/regiment_codex/presentation/providers/regiment_codex_provider.dart';
 import 'package:regimentcodex/gen/assets.gen.dart';
+import 'package:regimentcodex/generated/l10n.dart';
 
 part 'data/data_sources/codex_data_source.dart';
 part 'data/data_sources/local_data_source.dart';

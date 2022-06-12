@@ -9,11 +9,25 @@
 
 import 'package:flutter/widgets.dart';
 
+class $AssetsPhantomProfileGen {
+  const $AssetsPhantomProfileGen();
+
+  /// File path: assets/phantom_profile/veezy.gif
+  AssetGenImage get veezy =>
+      const AssetGenImage('assets/phantom_profile/veezy.gif');
+
+  /// File path: assets/phantom_profile/zac.gif
+  AssetGenImage get zac =>
+      const AssetGenImage('assets/phantom_profile/zac.gif');
+}
+
 class Assets {
   Assets._();
 
   static const AssetGenImage phantomPlaceholder =
       AssetGenImage('assets/phantom_placeholder.png');
+  static const $AssetsPhantomProfileGen phantomProfile =
+      $AssetsPhantomProfileGen();
 }
 
 class AssetGenImage {

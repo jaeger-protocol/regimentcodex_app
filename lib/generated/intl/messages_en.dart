@@ -23,6 +23,8 @@ class MessageLookup extends MessageLookupByLibrary {
   static String m0(quantity) =>
       "${Intl.plural(quantity, one: 'Item', other: 'Items')}";
 
+  static String m1(name) => "Who is ${name}?";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "builtByCommunity": MessageLookupByLibrary.simpleMessage(
@@ -42,9 +44,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "numberOfSales":
             MessageLookupByLibrary.simpleMessage("Number of Sales"),
         "owner": MessageLookupByLibrary.simpleMessage("Owners"),
+        "personality": MessageLookupByLibrary.simpleMessage("Personality"),
         "pxn": MessageLookupByLibrary.simpleMessage("PxN"),
+        "regPerks": MessageLookupByLibrary.simpleMessage("Reg Perks"),
         "regiment": MessageLookupByLibrary.simpleMessage("Regiment"),
         "regimentCodex": MessageLookupByLibrary.simpleMessage("Regiment Codex"),
-        "volumeTraded": MessageLookupByLibrary.simpleMessage("Volume Traded")
+        "volumeTraded": MessageLookupByLibrary.simpleMessage("Volume Traded"),
+        "whoIs": m1
       };
 }

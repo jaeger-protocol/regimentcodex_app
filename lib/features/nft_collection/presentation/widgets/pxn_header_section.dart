@@ -17,14 +17,14 @@ class PXNPreviewHeader extends StatelessWidget {
               Text(
                 RCLocal.of(context).findYour.toUpperCase(),
                 style: Theme.of(context).textTheme.headline1?.copyWith(
-                  fontSize: 30,
-                ),
+                      fontSize: 30,
+                    ),
               ),
               Text(
                 RCLocal.of(context).regiment.toUpperCase(),
                 style: Theme.of(context).textTheme.headline1?.copyWith(
-                  fontSize: 70,
-                ),
+                      fontSize: 70,
+                    ),
               ),
               const SizedBox(height: 30),
               Text(RCLocal.of(context).introDescription2),
@@ -38,11 +38,11 @@ class PXNPreviewHeader extends StatelessWidget {
         const Spacer(),
         Expanded(
           flex: 2,
-          child: CustomBox(
+          child: ClipRRect(
             borderRadius: BorderRadius.circular(30),
-            constraints: const BoxConstraints(maxWidth: 370, maxHeight: 370),
-            padding: const EdgeInsets.all(20),
-            child: const Placeholder(),
+            child: Image.asset(
+              Assets.phantomProfile.zac.path,
+            ),
           ),
         ),
         const SizedBox(width: 40),
