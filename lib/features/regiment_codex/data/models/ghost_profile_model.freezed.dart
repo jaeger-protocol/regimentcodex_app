@@ -20,14 +20,14 @@ GhostProfileModel _$GhostProfileModelFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$GhostProfileModel {
-  int? get id => throw _privateConstructorUsedError;
-  String? get image => throw _privateConstructorUsedError;
+  String? get id => throw _privateConstructorUsedError;
   String? get name => throw _privateConstructorUsedError;
-  int? get number => throw _privateConstructorUsedError;
-  num? get count => throw _privateConstructorUsedError;
+  String? get image => throw _privateConstructorUsedError;
   String? get openseaLink => throw _privateConstructorUsedError;
   String? get holderLink => throw _privateConstructorUsedError;
-  List<GhostTraitsModel>? get traits => throw _privateConstructorUsedError;
+  String? get description => throw _privateConstructorUsedError;
+  List<GhostAttributesModel>? get attributes =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -41,14 +41,13 @@ abstract class $GhostProfileModelCopyWith<$Res> {
           GhostProfileModel value, $Res Function(GhostProfileModel) then) =
       _$GhostProfileModelCopyWithImpl<$Res>;
   $Res call(
-      {int? id,
-      String? image,
+      {String? id,
       String? name,
-      int? number,
-      num? count,
+      String? image,
       String? openseaLink,
       String? holderLink,
-      List<GhostTraitsModel>? traits});
+      String? description,
+      List<GhostAttributesModel>? attributes});
 }
 
 /// @nodoc
@@ -63,35 +62,26 @@ class _$GhostProfileModelCopyWithImpl<$Res>
   @override
   $Res call({
     Object? id = freezed,
-    Object? image = freezed,
     Object? name = freezed,
-    Object? number = freezed,
-    Object? count = freezed,
+    Object? image = freezed,
     Object? openseaLink = freezed,
     Object? holderLink = freezed,
-    Object? traits = freezed,
+    Object? description = freezed,
+    Object? attributes = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int?,
-      image: image == freezed
-          ? _value.image
-          : image // ignore: cast_nullable_to_non_nullable
               as String?,
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String?,
-      number: number == freezed
-          ? _value.number
-          : number // ignore: cast_nullable_to_non_nullable
-              as int?,
-      count: count == freezed
-          ? _value.count
-          : count // ignore: cast_nullable_to_non_nullable
-              as num?,
+      image: image == freezed
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
       openseaLink: openseaLink == freezed
           ? _value.openseaLink
           : openseaLink // ignore: cast_nullable_to_non_nullable
@@ -100,10 +90,14 @@ class _$GhostProfileModelCopyWithImpl<$Res>
           ? _value.holderLink
           : holderLink // ignore: cast_nullable_to_non_nullable
               as String?,
-      traits: traits == freezed
-          ? _value.traits
-          : traits // ignore: cast_nullable_to_non_nullable
-              as List<GhostTraitsModel>?,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      attributes: attributes == freezed
+          ? _value.attributes
+          : attributes // ignore: cast_nullable_to_non_nullable
+              as List<GhostAttributesModel>?,
     ));
   }
 }
@@ -116,14 +110,13 @@ abstract class _$$_GhostProfileModelCopyWith<$Res>
       __$$_GhostProfileModelCopyWithImpl<$Res>;
   @override
   $Res call(
-      {int? id,
-      String? image,
+      {String? id,
       String? name,
-      int? number,
-      num? count,
+      String? image,
       String? openseaLink,
       String? holderLink,
-      List<GhostTraitsModel>? traits});
+      String? description,
+      List<GhostAttributesModel>? attributes});
 }
 
 /// @nodoc
@@ -140,35 +133,26 @@ class __$$_GhostProfileModelCopyWithImpl<$Res>
   @override
   $Res call({
     Object? id = freezed,
-    Object? image = freezed,
     Object? name = freezed,
-    Object? number = freezed,
-    Object? count = freezed,
+    Object? image = freezed,
     Object? openseaLink = freezed,
     Object? holderLink = freezed,
-    Object? traits = freezed,
+    Object? description = freezed,
+    Object? attributes = freezed,
   }) {
     return _then(_$_GhostProfileModel(
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int?,
-      image: image == freezed
-          ? _value.image
-          : image // ignore: cast_nullable_to_non_nullable
               as String?,
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String?,
-      number: number == freezed
-          ? _value.number
-          : number // ignore: cast_nullable_to_non_nullable
-              as int?,
-      count: count == freezed
-          ? _value.count
-          : count // ignore: cast_nullable_to_non_nullable
-              as num?,
+      image: image == freezed
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
       openseaLink: openseaLink == freezed
           ? _value.openseaLink
           : openseaLink // ignore: cast_nullable_to_non_nullable
@@ -177,10 +161,14 @@ class __$$_GhostProfileModelCopyWithImpl<$Res>
           ? _value.holderLink
           : holderLink // ignore: cast_nullable_to_non_nullable
               as String?,
-      traits: traits == freezed
-          ? _value._traits
-          : traits // ignore: cast_nullable_to_non_nullable
-              as List<GhostTraitsModel>?,
+      description: description == freezed
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      attributes: attributes == freezed
+          ? _value._attributes
+          : attributes // ignore: cast_nullable_to_non_nullable
+              as List<GhostAttributesModel>?,
     ));
   }
 }
@@ -190,36 +178,33 @@ class __$$_GhostProfileModelCopyWithImpl<$Res>
 class _$_GhostProfileModel implements _GhostProfileModel {
   _$_GhostProfileModel(
       {this.id,
-      this.image,
       this.name,
-      this.number,
-      this.count,
+      this.image,
       this.openseaLink,
       this.holderLink,
-      final List<GhostTraitsModel>? traits})
-      : _traits = traits;
+      this.description,
+      final List<GhostAttributesModel>? attributes})
+      : _attributes = attributes;
 
   factory _$_GhostProfileModel.fromJson(Map<String, dynamic> json) =>
       _$$_GhostProfileModelFromJson(json);
 
   @override
-  final int? id;
-  @override
-  final String? image;
+  final String? id;
   @override
   final String? name;
   @override
-  final int? number;
-  @override
-  final num? count;
+  final String? image;
   @override
   final String? openseaLink;
   @override
   final String? holderLink;
-  final List<GhostTraitsModel>? _traits;
   @override
-  List<GhostTraitsModel>? get traits {
-    final value = _traits;
+  final String? description;
+  final List<GhostAttributesModel>? _attributes;
+  @override
+  List<GhostAttributesModel>? get attributes {
+    final value = _attributes;
     if (value == null) return null;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(value);
@@ -227,7 +212,7 @@ class _$_GhostProfileModel implements _GhostProfileModel {
 
   @override
   String toString() {
-    return 'GhostProfileModel(id: $id, image: $image, name: $name, number: $number, count: $count, openseaLink: $openseaLink, holderLink: $holderLink, traits: $traits)';
+    return 'GhostProfileModel(id: $id, name: $name, image: $image, openseaLink: $openseaLink, holderLink: $holderLink, description: $description, attributes: $attributes)';
   }
 
   @override
@@ -236,15 +221,16 @@ class _$_GhostProfileModel implements _GhostProfileModel {
         (other.runtimeType == runtimeType &&
             other is _$_GhostProfileModel &&
             const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.image, image) &&
             const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.number, number) &&
-            const DeepCollectionEquality().equals(other.count, count) &&
+            const DeepCollectionEquality().equals(other.image, image) &&
             const DeepCollectionEquality()
                 .equals(other.openseaLink, openseaLink) &&
             const DeepCollectionEquality()
                 .equals(other.holderLink, holderLink) &&
-            const DeepCollectionEquality().equals(other._traits, _traits));
+            const DeepCollectionEquality()
+                .equals(other.description, description) &&
+            const DeepCollectionEquality()
+                .equals(other._attributes, _attributes));
   }
 
   @JsonKey(ignore: true)
@@ -252,13 +238,12 @@ class _$_GhostProfileModel implements _GhostProfileModel {
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(image),
       const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(number),
-      const DeepCollectionEquality().hash(count),
+      const DeepCollectionEquality().hash(image),
       const DeepCollectionEquality().hash(openseaLink),
       const DeepCollectionEquality().hash(holderLink),
-      const DeepCollectionEquality().hash(_traits));
+      const DeepCollectionEquality().hash(description),
+      const DeepCollectionEquality().hash(_attributes));
 
   @JsonKey(ignore: true)
   @override
@@ -274,34 +259,32 @@ class _$_GhostProfileModel implements _GhostProfileModel {
 
 abstract class _GhostProfileModel implements GhostProfileModel {
   factory _GhostProfileModel(
-      {final int? id,
-      final String? image,
+      {final String? id,
       final String? name,
-      final int? number,
-      final num? count,
+      final String? image,
       final String? openseaLink,
       final String? holderLink,
-      final List<GhostTraitsModel>? traits}) = _$_GhostProfileModel;
+      final String? description,
+      final List<GhostAttributesModel>? attributes}) = _$_GhostProfileModel;
 
   factory _GhostProfileModel.fromJson(Map<String, dynamic> json) =
       _$_GhostProfileModel.fromJson;
 
   @override
-  int? get id => throw _privateConstructorUsedError;
-  @override
-  String? get image => throw _privateConstructorUsedError;
+  String? get id => throw _privateConstructorUsedError;
   @override
   String? get name => throw _privateConstructorUsedError;
   @override
-  int? get number => throw _privateConstructorUsedError;
-  @override
-  num? get count => throw _privateConstructorUsedError;
+  String? get image => throw _privateConstructorUsedError;
   @override
   String? get openseaLink => throw _privateConstructorUsedError;
   @override
   String? get holderLink => throw _privateConstructorUsedError;
   @override
-  List<GhostTraitsModel>? get traits => throw _privateConstructorUsedError;
+  String? get description => throw _privateConstructorUsedError;
+  @override
+  List<GhostAttributesModel>? get attributes =>
+      throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_GhostProfileModelCopyWith<_$_GhostProfileModel> get copyWith =>

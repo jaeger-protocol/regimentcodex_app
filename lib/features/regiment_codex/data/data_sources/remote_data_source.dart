@@ -1,21 +1,15 @@
 part of regiment_codex;
 
-abstract class CodexRemoteDataSource {
-  Future<List<PhantomPreviewModel>> phantoms();
-
-  Future<PhantomProfileModel?> phantomProfile(String name);
-}
-
-class CodexRemoteDataSourceImpl implements CodexRemoteDataSource {
+class CodexRemoteDataSourceImpl implements CodexDataSource {
   @override
-  Future<List<PhantomPreviewModel>> phantoms() async {
+  Future<List<PhantomProfileModel>> phantoms() async {
     // TODO: implement phantoms
     throw UnimplementedError();
   }
 
   @override
-  Future<PhantomProfileModel?> phantomProfile(String name) async {
-    // TODO: implement phantomProfile
+  Future<List<GhostProfileModel>> ghosts() async {
+    // TODO: implement ghosts
     throw UnimplementedError();
   }
 }

@@ -1,16 +1,18 @@
-# regimentcodex
+# Regiment Codex (page preview)
 
-Lurking in the darkness are the ghosts of web3, lead by the predetory phantoms they are unstoppable
+Lurking in the darkness are the ghosts of web3, lead by the predatory phantoms they are unstoppable
 
-## Getting Started
+# Main Screen
 
-This project is a starting point for a Flutter application.
+![Screenshot 2022-06-07 at 20 46 14](https://user-images.githubusercontent.com/59662912/172469093-fd74626b-4a5e-4e06-b79f-4671b13b8f37.png)
 
-A few resources to get you started if this is your first Flutter project:
+# Phantom Profile
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Screenshot 2022-06-07 at 20 47 35](https://user-images.githubusercontent.com/59662912/172469323-6d464d80-2c77-41a6-a134-fd4c97f53fd4.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+# Ghost Profile Details
+
+![Screenshot 2022-06-07 at 20 48 23](https://user-images.githubusercontent.com/59662912/172469499-4c96c98e-5929-4f15-b195-35fee3990db5.png)
+
+

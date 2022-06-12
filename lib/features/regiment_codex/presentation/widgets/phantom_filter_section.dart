@@ -10,14 +10,45 @@ class PhantomPreviewFilerSection extends StatelessWidget {
       width: double.infinity,
       child: Row(
         children: [
-          const Expanded(child: CustomBox(height: 5)),
-          CustomBox(
-            width: 150,
-            height: 25,
-            borderRadius: BorderRadius.circular(6.0),
-            margin: const EdgeInsets.only(left: 20),
+          Expanded(
+            child: CustomBox(
+              height: 4,
+              color: Theme.of(context).colorScheme.onSurface,
+            ),
           ),
+          const PhantomSearchBox(),
         ],
+      ),
+    );
+  }
+}
+
+class PhantomSearchBox extends StatelessWidget {
+  const PhantomSearchBox({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return CustomBox(
+      width: 155,
+      height: 35,
+      borderRadius: BorderRadius.circular(6.0),
+      margin: const EdgeInsets.only(left: 20),
+      child: Center(
+        child: TextFormField(
+          decoration: InputDecoration(
+            isDense: true,
+            contentPadding: const EdgeInsets.only(top: 10),
+            border: InputBorder.none,
+            iconColor: Theme.of(context).colorScheme.onSurface,
+            prefixIcon: const Icon(Icons.search),
+            hintText: 'phantom name',
+            hintStyle: Theme.of(context).textTheme.caption,
+          ),
+          onChanged: (String? query) {
+            if (query == null) return;
+            context.read<RegimentCodexProvider>().searchPhantom(query);
+          },
+        ),
       ),
     );
   }
