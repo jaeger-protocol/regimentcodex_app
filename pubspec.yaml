@@ -54,6 +54,7 @@ flutter:
 
   assets:
     - assets/
+    - assets/logo/
     - assets/phantom_profile/
 
   fonts:
