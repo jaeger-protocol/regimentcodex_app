@@ -9,6 +9,17 @@
 
 import 'package:flutter/widgets.dart';
 
+class $AssetsLogoGen {
+  const $AssetsLogoGen();
+
+  /// File path: assets/logo/rc_letter_logo.png
+  AssetGenImage get rcLetterLogo =>
+      const AssetGenImage('assets/logo/rc_letter_logo.png');
+
+  /// File path: assets/logo/rc_logo.png
+  AssetGenImage get rcLogo => const AssetGenImage('assets/logo/rc_logo.png');
+}
+
 class $AssetsPhantomProfileGen {
   const $AssetsPhantomProfileGen();
 
@@ -24,6 +35,7 @@ class $AssetsPhantomProfileGen {
 class Assets {
   Assets._();
 
+  static const $AssetsLogoGen logo = $AssetsLogoGen();
   static const AssetGenImage phantomPlaceholder =
       AssetGenImage('assets/phantom_placeholder.png');
   static const $AssetsPhantomProfileGen phantomProfile =
