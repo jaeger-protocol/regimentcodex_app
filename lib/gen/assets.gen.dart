@@ -16,8 +16,13 @@ class $AssetsLogoGen {
   AssetGenImage get rcLetterLogo =>
       const AssetGenImage('assets/logo/rc_letter_logo.png');
 
-  /// File path: assets/logo/rc_logo.png
-  AssetGenImage get rcLogo => const AssetGenImage('assets/logo/rc_logo.png');
+  /// File path: assets/logo/rc_logo_rounded.png
+  AssetGenImage get rcLogoRounded =>
+      const AssetGenImage('assets/logo/rc_logo_rounded.png');
+
+  /// File path: assets/logo/rc_logo_square.png
+  AssetGenImage get rcLogoSquare =>
+      const AssetGenImage('assets/logo/rc_logo_square.png');
 }
 
 class $AssetsPhantomProfileGen {
